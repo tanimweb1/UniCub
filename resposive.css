@@ -1,0 +1,223 @@
+/* ===== MOBILE NAVBAR FIX ===== */
+@media (max-width:768px){
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:10px 12px;
+}
+
+/* hide desktop nav */
+nav{
+display:none;
+}
+
+/* show mobile search */
+.mobile-search{
+display:flex;
+}
+
+/* logo right */
+.logo{
+font-size:18px;
+font-weight:bold;
+}
+
+/* menu button */
+#menuBtn{
+display:block;
+font-size:22px;
+background:none;
+border:none;
+}
+
+/* dropdown menu */
+nav.active{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+background:white;
+padding:15px 0;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav.active a{
+padding:10px 20px;
+}
+
+}
+
+
+/* ===== HERO ===== */
+.hero{
+flex-direction:column;
+padding:40px 15px;
+text-align:center;
+gap:20px;
+}
+
+.hero-text{
+max-width:100%;
+}
+
+.hero-text h1{
+font-size:26px;
+}
+
+.slider{
+width:100%;
+}
+
+.slides img{
+height:200px;
+object-fit:cover;
+}
+
+
+/* ===== CLUBS ===== */
+.clubs-section{
+padding:25px 15px;
+}
+
+.clubs-grid{
+grid-template-columns:1fr;
+gap:15px;
+}
+
+.club-card img{
+height:180px;
+}
+
+
+/* ===== POSTS ===== */
+.posts-section{
+padding:25px 15px;
+}
+
+.posts-grid{
+grid-template-columns:1fr;
+}
+
+
+/* ===== FEATURED ===== */
+.featured{
+padding:25px 15px;
+}
+
+.featured-card{
+flex-direction:column;
+}
+
+.featured-card img{
+max-width:100%;
+height:200px;
+}
+
+
+/* ===== GALLERY ===== */
+.gallery{
+padding:25px 15px;
+}
+
+.gallery-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+
+/* ===== WHY JOIN ===== */
+.why-join{
+padding:25px 15px;
+}
+
+.why-grid{
+grid-template-columns:1fr;
+}
+
+
+/* ===== CTA ===== */
+.cta{
+padding:40px 20px;
+}
+
+
+/* ===== CONTACT ===== */
+.contact{
+padding:25px 15px;
+}
+
+.contact form{
+width:100%;
+}
+
+
+/* ===== FOOTER ===== */
+.footer{
+padding:25px 15px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+
+
+
+/* =========================
+   📲 TABLET (769px - 1024px)
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.slider{
+width:80%;
+margin-top:20px;
+}
+
+.clubs-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.posts-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.why-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+/* =========================
+   💻 SMALL DESKTOP
+========================= */
+
+@media (min-width: 1025px) and (max-width: 1300px){
+
+.clubs-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.posts-grid{
+grid-template-columns:repeat(3,1fr);
+}
+
+.gallery-grid{
+grid-template-columns:repeat(4,1fr);
+}
+
+}

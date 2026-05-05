@@ -1,0 +1,367 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f6fb;
+color:#222;
+line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:white;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#5a4bff;
+}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#5a4bff;
+}
+
+.nav-actions{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.nav-actions input{
+padding:8px 15px;
+border-radius:20px;
+border:1px solid #ddd;
+outline:none;
+}
+
+#menuBtn{
+display:none;
+font-size:20px;
+background:none;
+border:none;
+cursor:pointer;
+}
+
+
+/* ===== MOBILE NAV STYLE ===== */
+.mobile-search{
+display:none;
+flex:1;
+margin:0 10px;
+}
+
+.mobile-search input{
+width:100%;
+padding:8px 12px;
+border-radius:20px;
+border:1px solid #ddd;
+outline:none;
+}
+
+/* improve navbar spacing */
+.navbar{
+gap:10px;
+}
+
+/* ================= HERO ================= */
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:60px 40px;
+background:linear-gradient(135deg,#5a4bff,#8f7bff);
+color:white;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+margin-bottom:15px;
+}
+
+.hero button{
+padding:10px 20px;
+border:none;
+border-radius:25px;
+background:white;
+color:#5a4bff;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover{
+transform:scale(1.05);
+}
+
+/* SLIDER */
+.slider{
+width:450px;
+overflow:hidden;
+border-radius:15px;
+}
+
+.slides{
+display:flex;
+animation:slide 12s infinite;
+}
+
+.slides img{
+width:100%;
+}
+
+@keyframes slide{
+0%{transform:translateX(0)}
+33%{transform:translateX(-100%)}
+66%{transform:translateX(-200%)}
+100%{transform:translateX(0)}
+}
+
+/* ================= CLUBS ================= */
+.clubs-section{
+padding:40px 30px;
+}
+
+.clubs-section h2{
+margin-bottom:20px;
+}
+
+.clubs-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.club-card{
+position:relative;
+overflow:hidden;
+border-radius:15px;
+cursor:pointer;
+}
+
+.club-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.club-card:hover img{
+transform:scale(1.1);
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+color:white;
+padding:15px;
+text-align:center;
+}
+
+/* ================= POSTS ================= */
+.posts-section{
+padding:40px 30px;
+}
+
+.posts-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.post-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.post-card:hover{
+transform:translateY(-5px);
+}
+
+.post-card img{
+width:100%;
+height:150px;
+object-fit:cover;
+}
+
+.post-card h4{
+padding:10px;
+}
+
+.post-card p{
+padding:0 10px 10px;
+font-size:14px;
+}
+
+/* ================= FEATURED ================= */
+.featured{
+padding:40px 30px;
+}
+
+.featured-card{
+display:flex;
+gap:20px;
+background:white;
+border-radius:15px;
+overflow:hidden;
+flex-wrap:wrap;
+}
+
+.featured-card img{
+width:100%;
+max-width:400px;
+object-fit:cover;
+}
+
+.featured-card div{
+padding:20px;
+}
+
+/* ================= GALLERY ================= */
+.gallery{
+padding:40px 30px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:10px;
+}
+
+.gallery-grid img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* ================= WHY ================= */
+.why-join{
+padding:40px 30px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.why-grid div{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+/* ================= CTA ================= */
+.cta{
+text-align:center;
+padding:50px;
+background:#5a4bff;
+color:white;
+}
+
+.cta button{
+margin-top:10px;
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:white;
+color:#5a4bff;
+cursor:pointer;
+}
+
+/* ================= CONTACT ================= */
+.contact{
+padding:40px 30px;
+}
+
+.contact form{
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+}
+
+.contact input,
+.contact textarea{
+padding:10px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.contact button{
+padding:10px;
+background:#5a4bff;
+color:white;
+border:none;
+border-radius:8px;
+}
+
+/* ================= FOOTER ================= */
+.footer{
+background:#111;
+color:white;
+padding:30px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+/* Fade Animation */
+.fade-up{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.6s ease;
+}
+
+.fade-up.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Active nav */
+nav a.active{
+color:#5a4bff;
+font-weight:bold;
+}
